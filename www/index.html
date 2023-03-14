@@ -16,7 +16,7 @@
     <script>
     </script>
 </head>
-<body style="background-image: url('components/images/outerWilds.png'); height: 100%; width: auto; color: white">
+<body style="background-image: url('components/images/outerWilds.jpg'); height: 100%; width: auto; color: white">
 	<form>
         <br><h1 style="text-align: center">Cálculo de Eficiência</h1><br>
         <div class="input-group mb-3">
@@ -47,6 +47,27 @@
 
     <h3 id="resultado" class="headingKM">KM/L</h3>
     <hr>
-    <h3 id="economia" class="headingKM">Status Econômico</h3>
+    <table class="center">
+        <tr>
+            <th style="color: #DEDCDF">Condição</th>
+            <th>Status Econômico</th>
+        </tr>
+        <tr>
+            <td style="color: #DEDCDF">>= 20KM/L</td>
+            <td id="extremamente">Extremamente Econômico</td>
+        </tr>
+        <tr>
+            <td style="color: #DEDCDF">>= 12KM/L e < 20KM/L</td>
+            <td id="economico">Econômico</td>
+        </tr>
+        <tr>
+            <td style="color: #DEDCDF">>=8KM/L e < 12KM/L</td>
+            <td id="normal">Normal</td>
+        </tr>
+        <tr>
+            <td style="color: #DEDCDF">< 8KM/L</td>
+            <td id="altoConsumo">Alto Consumo</td>
+        </tr>
+    </table>
 </body>
 </html>
